@@ -8,11 +8,6 @@ def home(request):
     return render(request, "home.html", context)
 
 
-def curriculum(request):
-    context = {}
-    return render(request, "curriculum.html", context)
-
-
 def contact(request):
     context = {}
     return render(request, "contact.html", context)
