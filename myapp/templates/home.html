@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}HOME PAGE{% endblock %}</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+		<meta name="viewport" content="width=device-width"/>
+		<meta name="description" content="The Curriculum of Erikas Misevicius."/>
+		<meta charset="UTF-8"> 
+
+		<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+		<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="{% url 'home' %}">HOME</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+
+			<li class="nav-item active">
+				<a class="nav-link" href="{% url 'curriculum' %}">Curriculum<span class="sr-only">(current)</span></a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.linkedin.com/in/erikas-misevicius-216699176/">LinkedIn</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="https://github.com/mrerikas">GitHub</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.facebook.com/erikas.misevicius">Facebook</a>
+			</li>
+			
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a class="nav-link" href="{% url 'contact' %}">Get in Contact</a></button>
+			</form>
+		</div>
+	</nav>
+
+	{% block content %}
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<div class='container'>
+      <div class='jumbotron'>
+			<h1 style="text-align: center;"> About me </h1>
+
+			<h3>I am looking for job opportunities or practice position as a junior Python-Django developer or junior QA. During work as Sales Export Manager Italian market I began learning Udemy courses as Python Django full stack web developer, Python from zero to mastery, PostgreSQL and spent about 2 years in this position. Both studies and my work experience helped me to develop analytical, detail oriented and communication skills, however after 2 years I realized that I need changes in my career. I spent a lot of time studying Python programming language and Django web framework with basic knowledge of HTML, CSS, JavaScript ,Bootstrap and now I would like to use my knowledge in participating in real life projects.</h3>
+			<br>
+			<h3 style="text-align: center; color: red;"> More about me and my work experience in NavBar section </h3>
+		</div>
+	</div>
+
+	{% endblock %}
+
+</body>
+</html>

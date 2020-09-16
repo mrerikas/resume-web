@@ -1,0 +1,158 @@
+{% extends 'home.html' %}
+{% load static %}
+
+	<title>{% block title %} Erikas Misevicius Curriculum {% endblock %}</title>
+
+{% block content %}
+
+	<body id="top">
+	<div id="cv" class="instaFade">
+		<div class="mainDetails">
+			<div id="headshot" class="quickFade">
+				<img src="{% static 'images/Erikas.jpg' %}" alt="Erikas Misevicius" />
+			</div>
+			
+			<div id="name">
+				<h1 class="quickFade delayTwo">Erikas Misevicius</h1>
+				<h2 class="quickFade delayThree">Junior Python Developer</h2>
+			</div>
+			
+			<div id="contactDetails" class="quickFade delayFour">
+				<ul>
+					<li>LinkedIn: <a href="https://www.linkedin.com/in/erikas-misevicius-216699176/">Erikas Misevicius</a></li>
+					<li>GitHub: <a href="https://github.com/mrerikas">mrerikas</a></li>
+					<li>erikas.mise@gmail.com</a></li>
+					<li>Mob: +370 676 89 355</li>
+					<li>Vilnius, Lithuania</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<div id="mainArea" class="quickFade delayFive">
+			<section>
+				<article>
+					<div class="sectionTitle">
+						<h1>Personal Profile</h1>
+					</div>
+					
+					<div class="sectionContent">
+						<p>When I came back to Lithuania from United Kingdom in 2018 November I've started learning Python. My first Python book was "Automate The Boring Stuff". Then I understood, that Python is awesome, can do many things with it. Then I've started learning "Python and Django Full Stack Web Developer Bootcamp" and learned basics of HTML, CSS, JAVASCRIPT, BOOTSTRAP, Django and now I would like to use my knowledge in participating in real life projects. I'm still continuously learning every day, becouse my goal is to become "Full Stack Web Developer REACT + DJANGO", that's why nobody can stop me to do what I like. I'm very strong motivated person and oriented on my own setted up goals. Also I'm a good problem solver and detail oriented person.</p>
+					</div>
+				</article>
+				<div class="clear"></div>
+			</section>
+
+			<section>
+				<div class="sectionTitle">
+					<h1>Education</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<article>
+						<h2>Vilnius Coding School</h2>
+						<p class="subDetails">PYTHON beginner course, 2020</p>
+						<li>Data Types</li>
+						<li>Loops & Conditions</li>
+						<li>Functions & Classes</li>
+						<li>Git control & cmd</li>
+						<p>During one month of the studies, on Udemy.com completed "Python Bootcamp from Zero to Hero" also in additional I've done a mini project with Classes, Functions, Ingeritances which you can find in my GitHub page named "monthy_salary_calculation".</p>
+					</article>
+					
+					<article>
+						<h2>Istituto Professionale Alberghiero Statale Trivero</h2>
+						<p class="subDetails">Bar & Hotel managment, 2004-2007</p>
+						<p>Professional institute in Italy</p>
+					</article>
+				</div>
+				<div class="clear"></div>
+			</section>
+			
+			<section>
+				<div class="sectionTitle">
+					<h1>Work Experience</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<article>
+						<h2>Freelance</h2>
+						<p class="subDetails">April 2020 - Present</p>
+						<p>Continuously learning Python, Django web framework, SQLite, PostgreSQL, MySQL and looking for new opportunities in IT role to use my knowledge in participating in real life projects.</p>
+					</article>
+					
+					<article>
+						<h2>Sales Manager Italian Market at MODUS GROUP</h2>
+						<p class="subDetails">February 2019 - March 2020</p>
+						<li>Achieve ambitious sales growth without compromise on profitability.</li>
+						<li>Analyze the customer needs and feedback market trends.</li>
+						<li>Build and maintain long term relationships with new and existing B2B customers.</li>
+						<li>Provide regular reports.</li>
+						<p>In this role I achieved strong skills like communication, analyze, detail oriented, achieving setted up goals and much more... </p>
+					</article>
+					
+					<article>
+						<h2>Various Jobs from Agencies in UK</h2>
+						<h2>Customer Service & Driver</h2>
+						<p class="subDetails">May 2014 - October 2018</p>
+						<li>Resolving service issues.</li>
+						<li>Responding to general inquiries from members, clients via telephone and email.</li>
+						<li>Consulting with customers on options for service.</li>
+						<li>Delivering orders on time</li>
+						<p>During this time, I improved my English skills and met peoples from different cultures.</p>
+					</article>
+				</div>
+				<div class="clear"></div>
+			</section>
+			
+			<section>
+				<div class="sectionTitle">
+					<h1>Language Skills</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<ul class="keySkills">
+						<li>Lithuanian: Native</li>
+						<li>Italian: C2</li>
+						<li>English: C1</li>
+						<li>Russian: C1</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</section>
+			
+			<section>
+				<div class="sectionTitle">
+					<h1>Other Skills</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<ul class="keySkills">
+						<li>Python Intermediate</li>
+						<li>Django Beginner</li>
+						<li>HTML, CSS basics</li>
+						<li>JavaScript basics</li>
+						<li>PostgreSQL</li>
+						<li>BOOTSTRAP</li>
+						<li>Git & GitHub</li>
+						<li>Analytical Skill</li>
+						<li>Troubleshooting</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</section>
+			
+		</div>
+	</div>
+    </body>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+{% endblock %}
