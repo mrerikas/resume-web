@@ -1,13 +1,30 @@
 from django.shortcuts import render
+from django.core.mail import send_mail
+from django.conf import settings
 
 # Create your views here.
 
 
 def home(request):
-    context = {}
-    return render(request, "home.html", context)
+    return render(request, "home.html", {})
 
 
 def contact(request):
-    context = {}
-    return render(request, "contact.html", context)
+    if request.method == "POST":
+        message_name = request.POST["message-name"]
+        message_subject = request.POST["message-subject"]
+        message_email = request.POST["message-email"]
+        message = request.POST["message"]
+
+        # send and email
+        send_mail(
+            message_name + " / " + message_subject + " / " + message_email,  # subject
+            message,  # message
+            settings.EMAIL_HOST,  # from email
+            ["erikutism@gmail.com"],  # To email
+            fail_silently=False,
+        )
+
+        return render(request, "contact.html", {})
+    else:
+        return render(request, "contact.html", {})
