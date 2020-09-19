@@ -1,4 +1,6 @@
 from django.shortcuts import render
+
+# from django.http import HttpResponse, HttpResponseRedirect
 from django.core.mail import send_mail
 from django.conf import settings
 
@@ -7,6 +9,10 @@ from django.conf import settings
 
 def home(request):
     return render(request, "home.html", {})
+
+
+def success(request):
+    return render(request, "success.html", {})
 
 
 def contact(request):
@@ -25,6 +31,7 @@ def contact(request):
         #     fail_silently=False,
         # )
 
-        return render(request, "contact.html", {})
+        return render(request, "success.html", {"message_name": message_name})
+
     else:
         return render(request, "contact.html", {})
