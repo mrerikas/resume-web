@@ -17,13 +17,13 @@ def contact(request):
         message = request.POST["message"]
 
         # send and email
-        send_mail(
-            message_name + " / " + message_subject + " / " + message_email,  # subject
-            message,  # message
-            settings.EMAIL_HOST,  # from email
-            ["erikutism@gmail.com"],  # To email
-            fail_silently=False,
-        )
+        # send_mail(
+        #     message_name + " / " + message_subject + " / " + message_email,  # subject
+        #     message,  # message
+        #     settings.EMAIL_HOST,  # from email
+        #     ["erikutism@gmail.com"],  # To email
+        #     fail_silently=False,
+        # )
 
         return render(request, "contact.html", {})
     else:
