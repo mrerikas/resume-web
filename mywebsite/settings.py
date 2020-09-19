@@ -17,7 +17,7 @@ SECRET_KEY = "4@%cr4bno82ho^r-av9&pc(4x=w3ng79p3u3arq^5x$b11huk9"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["mrerikas.herokuapp.com", "127.0.0.1", "smtp.gmail.com"]
+ALLOWED_HOSTS = ["mrerikas.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition

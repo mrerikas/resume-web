@@ -12,7 +12,7 @@ def home(request):
 
 
 def success(request):
-    return render(request, "success.html", {})
+    return render(request, "success.html", {"message_name": message_name})
 
 
 def contact(request):
