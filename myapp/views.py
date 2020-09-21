@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
-# from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect
 from django.core.mail import send_mail
 from django.conf import settings
 
@@ -12,7 +12,11 @@ def home(request):
 
 
 def success(request):
-    return render(request, "success.html", {"message_name": message_name})
+    return render(request, "success.html")
+
+
+# def success(request):
+#     return render(request, "success.html")
 
 
 def contact(request):
@@ -22,16 +26,19 @@ def contact(request):
         message_email = request.POST["message-email"]
         message = request.POST["message"]
 
-        # send and email
-        # send_mail(
-        #     message_name + " / " + message_subject + " / " + message_email,  # subject
-        #     message,  # message
-        #     settings.EMAIL_HOST,  # from email
-        #     ["erikutism@gmail.com"],  # To email
-        #     fail_silently=False,
-        # )
-
-        return render(request, "success.html", {"message_name": message_name})
+        return redirect("success/", {"message_name": message_name})
+        # return render(request, "success.html", {"message_name": message_name})
 
     else:
         return render(request, "contact.html", {})
+
+
+# send and email
+# send_mail(
+#     message_name + " / " + message_subject + " / " + message_email,  # subject
+#     message,  # message
+#     settings.EMAIL_HOST,  # from email
+#     ["erikutism@gmail.com"],  # To email
+#     fail_silently=False,
+# )
+
