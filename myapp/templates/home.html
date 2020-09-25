@@ -1,47 +1,52 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>{% block title %}HOME PAGE{% endblock %}</title>
 
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<head>
+	<title>{% block title %}HOME PAGE{% endblock %}</title>
 
-		<meta name="viewport" content="width=device-width"/>
-		<meta name="description" content="The Curriculum of Erikas Misevicius."/>
-		<meta charset="UTF-8"> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-		<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
-		<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width" />
+	<meta name="description" content="The Curriculum of Erikas Misevicius." />
+	<meta charset="UTF-8">
 
-		<!--[if lt IE 9]>
+	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-	</head>
-	<body>
+</head>
+
+<body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  		<a class="navbar-brand" href="{% url 'home' %}">HOME</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
+		<a class="navbar-brand" href="{% url 'home' %}">HOME</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-			<li class="nav-item">
-				<a class="nav-link" href="https://www.linkedin.com/in/erikas-misevicius-216699176/">LinkedIn</a>
-			</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://www.linkedin.com/in/erikas-misevicius-216699176/">LinkedIn</a>
+				</li>
 
-			<li class="nav-item">
-				<a class="nav-link" href="https://github.com/mrerikas">GitHub</a>
-			</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://github.com/mrerikas">GitHub</a>
+				</li>
 
-			<li class="nav-item">
-				<a class="nav-link" href="https://www.facebook.com/erikas.misevicius">Facebook</a>
-			</li>
-			
+				<li class="nav-item">
+					<a class="nav-link" href="https://www.facebook.com/erikas.misevicius">Facebook</a>
+				</li>
+
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a class="nav-link" href="{% url 'contact' %}">Get in Contact</a></button>
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a class="nav-link"
+						href="{% url 'contact' %}">Get in Contact</a></button>
 			</form>
 		</div>
 	</nav>
@@ -49,164 +54,184 @@
 	{% block content %}
 
 	<body id="top">
-	<div id="cv" class="instaFade">
-		<div class="mainDetails">
-			<div id="headshot" class="quickFade">
-				<img src="{% static 'images/Erikas.jpg' %}" alt="Erikas Misevicius" />
-			</div>
-			
-			<div id="name">
-				<h1 class="quickFade delayTwo">Erikas Misevicius</h1>
-				<h2 class="quickFade delayThree">Junior Python Developer</h2>
-			</div>
-			
-			<div id="contactDetails" class="quickFade delayFour">
-				<ul>
-					<li>LinkedIn: <a href="https://www.linkedin.com/in/erikas-misevicius-216699176/">Erikas Misevicius</a></li>
-					<li>GitHub: <a href="https://github.com/mrerikas">mrerikas</a></li>
-					<li>erikas.mise@gmail.com</a></li>
-					<li>Mob: +370 676 89 355</li>
-					<li>Vilnius, Lithuania</li>
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</div>
-		
-		<div id="mainArea" class="quickFade delayFive">
-			<section>
-				<article>
-					<div class="sectionTitle">
-						<h1>Personal Profile</h1>
-					</div>
-					
-					<div class="sectionContent">
-						<p>When I came back to Lithuania from United Kingdom in 2018 November I've started learning Python. My first Python book was "Automate The Boring Stuff". Then I understood, that Python is awesome, can do many things with it. Then I've started learning "Python and Django Full Stack Web Developer Bootcamp" and learned basics of HTML, CSS, JAVASCRIPT, BOOTSTRAP, Django and now I would like to use my knowledge in participating in real life projects. I'm still continuously learning every day, becouse my goal is to become "Full Stack Web Developer REACT + DJANGO", that's why nobody can stop me to do what I like. I'm very strong motivated person and oriented on my own setted up goals. Also I'm a good problem solver and detail oriented person.</p>
-					</div>
-				</article>
-				<div class="clear"></div>
-			</section>
+		<div id="cv" class="instaFade">
+			<div class="mainDetails">
+				<div id="headshot" class="quickFade">
+					<img src="{% static 'images/Erikas.jpg' %}" alt="Erikas Misevicius" />
+				</div>
 
-			<section>
-				<div class="sectionTitle">
-					<h1>Education</h1>
+				<div id="name">
+					<h1 class="quickFade delayTwo">Erikas Misevicius</h1>
+					<h2 class="quickFade delayThree">Junior Python Developer</h2>
 				</div>
-				
-				<div class="sectionContent">
-					<article>
-						<h2>Vilnius Coding School</h2>
-						<p class="subDetails">PYTHON beginner course, 2020</p>
-						<br>
-						<li>Data Types</li>
-						<li>Loops & Conditions</li>
-						<li>Functions & Classes</li>
-						<li>Git control & cmd</li>
-						<p>During one month of the studies, on Udemy.com completed "Python Bootcamp from Zero to Hero" also in additional I've done a mini project with Classes, Functions, Ingeritances which you can find in my GitHub page named "monthy_salary_calculation".</p>
-					</article>
-					
-					<article>
-						<h2>Istituto Professionale Alberghiero Statale Trivero</h2>
-						<p class="subDetails">Bar & Hotel managment, 2004-2007</p>
-						<p>Professional institute in Italy</p>
-					</article>
-				</div>
-				<div class="clear"></div>
-			</section>
-			
-			<section>
-				<div class="sectionTitle">
-					<h1>Work Experience</h1>
-				</div>
-				
-				<div class="sectionContent">
-					<article>
-						<h2>Freelance</h2>
-						<p class="subDetails">April 2020 - Present</p>
-						<br>
-						<p>Continuously learning Python, Django web framework, SQLite, PostgreSQL, MySQL and looking for new opportunities in IT role to use my knowledge in participating in real life projects.</p>
-					</article>
-					
-					<article>
-						<h2>Sales Manager Italian Market at MODUS GROUP</h2>
-						<p class="subDetails">February 2019 - March 2020</p>
-						<br>
-						<li>Achieve ambitious sales growth without compromise on profitability.</li>
-						<li>Analyze the customer needs and feedback market trends.</li>
-						<li>Build and maintain long term relationships with new and existing B2B customers.</li>
-						<li>Provide regular reports.</li>
-						<p>In this role I achieved strong skills like communication, analyze, detail oriented, achieving setted up goals and much more... </p>
-					</article>
-					
-					<article>
-						<h2>Various Jobs from Agencies in UK</h2>
-						<h2>Customer Service & Driver</h2>
-						<p class="subDetails">May 2014 - October 2018</p>
-						<br>
-						<li>Resolving service issues.</li>
-						<li>Responding to general inquiries from members, clients via telephone and email.</li>
-						<li>Consulting with customers on options for service.</li>
-						<li>Delivering orders on time</li>
-						<p>During this time, I improved my English skills and met peoples from different cultures.</p>
-					</article>
-				</div>
-				<div class="clear"></div>
-			</section>
-			
-			<section>
-				<div class="sectionTitle">
-					<h1>Language Skills</h1>
-				</div>
-				
-				<div class="sectionContent">
-					<ul class="keySkills">
-						<li>Lithuanian: Native</li>
-						<li>Italian: C2</li>
-						<li>English: C1</li>
-						<li>Russian: C1</li>
+
+				<div id="contactDetails" class="quickFade delayFour">
+					<ul>
+						<li>LinkedIn: <a href="https://www.linkedin.com/in/erikas-misevicius-216699176/">Erikas
+								Misevicius</a></li>
+						<li>GitHub: <a href="https://github.com/mrerikas">mrerikas</a></li>
+						<li>erikas.mise@gmail.com</a></li>
+						<li>Mob: +370 676 89 355</li>
+						<li>Vilnius, Lithuania</li>
 					</ul>
 				</div>
 				<div class="clear"></div>
-			</section>
-			
-			<section>
-				<div class="sectionTitle">
-					<h1>Other Skills</h1>
-				</div>
-				
-				<div class="sectionContent">
-					<ul class="keySkills">
-						<li>Python Intermediate</li>
-						<li>Django Beginner</li>
-						<li>HTML, CSS basics</li>
-						<li>JavaScript basics</li>
-						<li>PostgreSQL</li>
-						<li>BOOTSTRAP</li>
-						<li>Git & GitHub</li>
-						<li>Analytical Skill</li>
-						<li>Troubleshooting</li>
-					</ul>
-				</div>
-				<div class="clear"></div>
-			</section>
-			
+			</div>
+
+			<div id="mainArea" class="quickFade delayFive">
+				<section>
+					<article>
+						<div class="sectionTitle">
+							<h1>Personal Profile</h1>
+						</div>
+
+						<div class="sectionContent">
+							<p>I am looking for job opportunities as a Junior Python developer, QA or Tech support.
+								During work as Sales Export Manager I began learning Udemy online courses. I’ve learned
+								Python, Django, CSS, HTML, Bootstrap, SQL and spent about 2 years. Also in 2020 August I
+								finished Vilnius Coding School Python course and still continuously learning and working
+								on projects every day. Both studies and my work experience helped me to develop
+								analytical, detail oriented and communication skills. Now I would like to use my
+								knowledge in participating in real life projects. With my knowledge and practice
+								experience I could growth in career as QA Automate Engineer or Software Engineer.</p>
+						</div>
+					</article>
+					<div class="clear"></div>
+				</section>
+
+				<section>
+					<div class="sectionTitle">
+						<h1>Education</h1>
+					</div>
+
+					<div class="sectionContent">
+						<article>
+							<h2>Vilnius Coding School</h2>
+							<p class="subDetails">PYTHON beginner course, 2020</p>
+							<br>
+							<li>Data Types</li>
+							<li>Loops & Conditions</li>
+							<li>Functions & Classes</li>
+							<li>Git control & cmd</li>
+							<p>During one month of the studies, on Udemy.com completed "Python Bootcamp from Zero to
+								Hero" also in additional I've done a mini project with Classes, Functions, Ingeritances
+								which you can find in my GitHub page named "monthy_salary_calculation".</p>
+						</article>
+
+						<article>
+							<h2>Istituto Professionale Alberghiero Statale Trivero</h2>
+							<p class="subDetails">Bar & Hotel managment, 2004-2007</p>
+							<p>Professional institute in Italy</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+
+				<section>
+					<div class="sectionTitle">
+						<h1>Work Experience</h1>
+					</div>
+
+					<div class="sectionContent">
+						<article>
+							<h2>Freelance</h2>
+							<p class="subDetails">April 2020 - Present</p>
+							<br>
+							<p>Continuously learning Python, Django web framework, SQLite, PostgreSQL, MySQL and looking
+								for new opportunities in IT role to use my knowledge in participating in real life
+								projects.</p>
+						</article>
+
+						<article>
+							<h2>Sales Manager Italian Market at MODUS GROUP</h2>
+							<p class="subDetails">February 2019 - March 2020</p>
+							<br>
+							<li>Achieve ambitious sales growth without compromise on profitability.</li>
+							<li>Analyze the customer needs and feedback market trends.</li>
+							<li>Build and maintain long term relationships with new and existing B2B customers.</li>
+							<li>Provide regular reports.</li>
+							<p>In this role I achieved strong skills like communication, analyze, detail oriented,
+								achieving setted up goals and much more... </p>
+						</article>
+
+						<article>
+							<h2>Various Jobs from Agencies in UK</h2>
+							<h2>Customer Service & Driver</h2>
+							<p class="subDetails">May 2014 - October 2018</p>
+							<br>
+							<li>Resolving service issues.</li>
+							<li>Responding to general inquiries from members, clients via telephone and email.</li>
+							<li>Consulting with customers on options for service.</li>
+							<li>Delivering orders on time</li>
+							<p>During this time, I improved my English skills and met peoples from different cultures.
+							</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+
+				<section>
+					<div class="sectionTitle">
+						<h1>Language Skills</h1>
+					</div>
+
+					<div class="sectionContent">
+						<ul class="keySkills">
+							<li>Lithuanian: Native</li>
+							<li>Italian: C2</li>
+							<li>English: C1</li>
+							<li>Russian: C1</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</section>
+
+				<section>
+					<div class="sectionTitle">
+						<h1>Other Skills</h1>
+					</div>
+
+					<div class="sectionContent">
+						<ul class="keySkills">
+							<li>Python Intermediate</li>
+							<li>Django Beginner</li>
+							<li>HTML, CSS basics</li>
+							<li>JavaScript basics</li>
+							<li>PostgreSQL</li>
+							<li>BOOTSTRAP</li>
+							<li>Git & GitHub</li>
+							<li>Analytical Skill</li>
+							<li>Troubleshooting</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</section>
+
+			</div>
 		</div>
-	</div>
 
 		<script type="text/javascript">
-		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 		</script>
 		<script type="text/javascript">
-		var pageTracker = _gat._getTracker("UA-3753241-1");
-		pageTracker._initData();
-		pageTracker._trackPageview();
+			var pageTracker = _gat._getTracker("UA-3753241-1");
+			pageTracker._initData();
+			pageTracker._trackPageview();
 		</script>
 
 		{% endblock %}
 
 	</body>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
 
 </html>
